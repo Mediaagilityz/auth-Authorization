@@ -20,7 +20,7 @@ export class LoginComponent {
     this.authService.login(credentials).subscribe(
       (result) => {
         const returnUrl = this.route.snapshot.queryParamMap.get('returnUrl');
-        this.router.navigate([returnUrl || '/']);
+        this.router.navigate([returnUrl || '/admin']);
       },
       // error if login info is incorrect
       (error) => {
