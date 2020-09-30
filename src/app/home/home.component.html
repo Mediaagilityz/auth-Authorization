@@ -1,0 +1,18 @@
+<div [style.backgroundColor]="color">
+  <h1>Home Page {{ env }}</h1>
+</div>
+<p *ngIf="isLoggedIn">Welcome {{ currentUser["name"] }}</p>
+<ul>
+  <li *ngIf="isLoggedIn && currentUser['admin']">
+    <a routerLink="/admin">Admin</a>
+  </li>
+  <li *ngIf="isLoggedIn && currentUser['admin']">
+    <a routerLink="/sandia">Sandia</a>
+  </li>
+  <li *ngIf="!isLoggedIn">
+    <a routerLink="/login">Login</a>
+  </li>
+  <li *ngIf="isLoggedIn">
+    <a routerLink="/" (click)="logout()">Logout</a>
+  </li>
+</ul>
