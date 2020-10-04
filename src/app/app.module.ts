@@ -64,3 +64,7 @@ export class AppModule {}
 platformBrowserDynamic()
   .bootstrapModule(AppModule)
   .catch((err) => console.error(err));
+
+// Nota:
+// Si se pueden crear mas router - outlets
+// Para las rutas anidadas
