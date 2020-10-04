@@ -66,5 +66,5 @@ platformBrowserDynamic()
   .catch((err) => console.error(err));
 
 // Nota:
-// Si se pueden crear mas router - outlets
+// Si se pueden crear mas <router-outlet></router-outlet>
 // Para las rutas anidadas
